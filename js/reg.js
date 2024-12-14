@@ -12,4 +12,4 @@ const regErrorModal = new bootstrap.Modal($("#regErrorModal"), {});
 //   $(this).find('input').eq(0).focus();
 // });
 
-regErrorModal.show();
+regModalEmail.show();

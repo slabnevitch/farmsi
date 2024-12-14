@@ -159,7 +159,7 @@ textarea {
   display: flex;
   -ms-flex-align: center;
   align-items: center;
-  row-gap: 4px;
+  column-gap: 4px;
   margin-bottom: 32px;
 }
 
@@ -539,6 +539,7 @@ textarea {
 /*=====================Repair=========================*/
 .password-repair__note {
   margin-bottom: 32px;
+  font-size: 14px;
 }
 
 .password-repair__row:not(:last-child) {
