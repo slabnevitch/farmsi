@@ -40,14 +40,14 @@
           <div class="modal__body">
             <div class="enter-modal__group">
               <div class="enter-modal__group-inner">
-                <input id="email" type="text" name="phone-mail" placeholder=" " class="enter-modal__input">
+                <input type="text" name="phone-mail" placeholder=" " class="enter-modal__input">
                 <button type="button" class="modal__clear">
                   <svg aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M15.332 4.66663L4.66536 15.3333" stroke="#ABB6CC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                     <path d="M4.66797 4.66663L15.3346 15.3333" stroke="#ABB6CC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                   </svg>
                 </button>
-                <label for="email" class="enter-modal__placeholder">Телефон или email</label>
+                <label class="enter-modal__placeholder">Телефон или email</label>
               </div>
             </div>
           </div>
@@ -70,14 +70,14 @@
           <div class="modal__body">
             <div class="enter-modal__group">
               <div class="enter-modal__group-inner">
-                <input id="phone" type="text" name="phone" value="+7 (928) 452-15-95" placeholder=" " class="enter-modal__input">
+                <input type="text" name="phone" value="+7 (928) 452-15-95" placeholder=" " class="enter-modal__input">
                 <button type="button" class="modal__clear">
                   <svg aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M15.332 4.66663L4.66536 15.3333" stroke="#ABB6CC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                     <path d="M4.66797 4.66663L15.3346 15.3333" stroke="#ABB6CC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                   </svg>
                 </button>
-                <label for="phone" class="enter-modal__placeholder">Телефон или email</label>
+                <label class="enter-modal__placeholder">Телефон или email</label>
               </div>
             </div>
           </div>
@@ -216,8 +216,8 @@
             </div>
             <div class="enter-modal__group">
               <div class="enter-modal__group-inner">
-                <input id="enter-password-error" type="text" name="password" value="В1623xHK_8jI092" placeholder=" " class="enter-modal__input enter-modal__input--error">
-                <label for="enter-password-error" class="enter-modal__placeholder">Пароль</label>
+                <input type="text" name="password" value="В1623xHK_8jI092" placeholder=" " class="enter-modal__input enter-modal__input--error">
+                <label class="enter-modal__placeholder">Пароль</label>
                 <button type="button" class="eye-ico">
                   <div class="eye-ico__show">
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -242,13 +242,596 @@
         </div>
       </div>
     </div>
+    <div id="regModalEmail" tabindex="-1" aria-modal="true" role="dialog" class="modal fade">
+      <div class="modal-dialog modal-dialog-centered enter-modal-dialog">
+        <div class="enter-modal reg-modal modal-content">
+          <button type="button" data-bs-dismiss="modal" aria-label="Close" class="modal__close enter-modal__close">
+            <svg aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15.332 4.66663L4.66536 15.3333" stroke="#ABB6CC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M4.66797 4.66663L15.3346 15.3333" stroke="#ABB6CC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </button>
+          <div class="modal__header enter-modal__header">
+            <button type="button" class="modal__back">
+              <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17 7H1M1 7L7 1M1 7L7 13" stroke="#ABB6CC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </button>
+            <p class="enter-modal__title">Регистрация</p>
+          </div>
+          <div class="modal__body">
+            <div class="enter-modal__group">
+              <div class="enter-modal__group-inner">
+                <input id="" type="text" name="name" placeholder=" " class="enter-modal__input">
+                <button type="button" class="modal__clear">
+                  <svg aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.332 4.66663L4.66536 15.3333" stroke="#ABB6CC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M4.66797 4.66663L15.3346 15.3333" stroke="#ABB6CC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </button>
+                <label for="" class="enter-modal__placeholder">Имя и фамилия</label>
+              </div>
+            </div>
+            <div class="enter-modal__group">
+              <div class="enter-modal__group-inner">
+                <input inputmode="tel" type="tel" name="phone" placeholder=" " class="enter-modal__input">
+                <button type="button" class="modal__clear">
+                  <svg aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.332 4.66663L4.66536 15.3333" stroke="#ABB6CC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M4.66797 4.66663L15.3346 15.3333" stroke="#ABB6CC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </button>
+                <label for="" class="enter-modal__placeholder">Телефон</label>
+              </div>
+            </div>
+            <div class="enter-modal__group">
+              <div class="enter-modal__group-inner">
+                <input type="text" name="mail" placeholder=" " value="ivanovalexey@gmail.com" readonly class="enter-modal__input enter-modal__input--fill">
+                <button type="button" class="modal__edit">
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.41604 2.24719L8.97217 1.69107C9.89359 0.769644 11.3875 0.769644 12.3089 1.69107C13.2304 2.61249 13.2304 4.10641 12.3089 5.02783L11.7528 5.58396M8.41604 2.24719C8.41604 2.24719 8.48556 3.42897 9.5283 4.47171C10.571 5.51445 11.7528 5.58396 11.7528 5.58396M8.41604 2.24719L3.30329 7.35994C2.957 7.70624 2.78385 7.87939 2.63494 8.0703C2.45928 8.29551 2.30868 8.53919 2.18581 8.79701C2.08164 9.01558 2.00421 9.24789 1.84934 9.71249L1.19308 11.6812M11.7528 5.58396L6.64006 10.6967C6.29376 11.043 6.12061 11.2162 5.9297 11.3651C5.70449 11.5407 5.46082 11.6913 5.20299 11.8142C4.98442 11.9184 4.75211 11.9958 4.28751 12.1507L2.31875 12.8069M2.31875 12.8069L1.8375 12.9673C1.60887 13.0435 1.35679 12.984 1.18638 12.8136C1.01596 12.6432 0.956457 12.3911 1.03267 12.1625L1.19308 11.6812M2.31875 12.8069L1.19308 11.6812" stroke="#ABB6CC" stroke-width="2"></path>
+                  </svg>
+                </button>
+                <label class="enter-modal__placeholder">Email</label>
+              </div>
+            </div>
+          </div>
+          <div class="enter-modal__group">
+            <div class="enter-modal__group-inner">
+              <input type="text" name="createpassword" placeholder=" " class="enter-modal__input">
+              <label class="enter-modal__placeholder">Придумайте пароль</label>
+              <button type="button" class="eye-ico unblind">
+                <div class="eye-ico__show">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 8C15 9 11.8656 13 8 13C4.13444 13 1 9 1 8C1 7 4.13444 3 8 3C11.8656 3 15 7 15 8Z" stroke="#ABB6CC" stroke-width="2"></path>
+                    <path d="M10 8C10 8.53043 9.78929 9.03914 9.41421 9.41421C9.03914 9.78929 8.53043 10 8 10C7.46957 10 6.96086 9.78929 6.58579 9.41421C6.21071 9.03914 6 8.53043 6 8C6 7.46957 6.21071 6.96086 6.58579 6.58579C6.96086 6.21071 7.46957 6 8 6C8.53043 6 9.03914 6.21071 9.41421 6.58579C9.78929 6.96086 10 7.46957 10 8Z" stroke="#ABB6CC" stroke-width="2"></path>
+                  </svg>
+                </div>
+                <div class="eye-ico__hide">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.7984 4.60196C14.4468 4.17598 13.8166 4.11561 13.3906 4.46713C12.9646 4.81864 12.9042 5.44892 13.2558 5.8749L14.7984 4.60196ZM6.66672 10.8131C6.13438 10.666 5.5836 10.9783 5.43652 11.5107C5.28943 12.043 5.60175 12.5938 6.13408 12.7409L6.66672 10.8131ZM14 7C14 6.90869 14.0224 6.9232 13.9475 7.088C13.8844 7.22662 13.7791 7.41348 13.6256 7.63686C13.3196 8.08235 12.8616 8.61576 12.2856 9.12728C11.1161 10.1659 9.59358 11 8 11V13C10.272 13 12.2495 11.8341 13.6136 10.6227C14.3044 10.0092 14.8716 9.35515 15.2741 8.76939C15.4749 8.47714 15.6446 8.18744 15.7681 7.9159C15.8796 7.67055 16 7.34131 16 7H14ZM2 7C2 7.09131 1.97759 7.0768 2.05253 6.912C2.11557 6.77338 2.22091 6.58652 2.37438 6.36314C2.68045 5.91765 3.13843 5.38424 3.71443 4.87272C4.88395 3.83412 6.40642 3 8 3V1C5.72803 1 3.7505 2.16588 2.3864 3.37728C1.69559 3.99076 1.12837 4.64485 0.725936 5.23061C0.525149 5.52286 0.355412 5.81256 0.231934 6.0841C0.120362 6.32945 0 6.65869 0 7H2ZM4.36521 9.65453C3.60404 9.09405 2.97875 8.44512 2.55129 7.88145C2.33731 7.5993 2.18427 7.35344 2.08965 7.16534C1.97701 6.94142 2 6.90359 2 7H0C0 7.39097 0.158981 7.77787 0.302959 8.06409C0.464956 8.38614 0.689161 8.73586 0.957703 9.08996C1.49528 9.79883 2.25613 10.5852 3.17933 11.265L4.36521 9.65453ZM8 3C9.26695 3 10.4918 3.52586 11.5415 4.27773L12.7061 2.65178C11.4425 1.74671 9.81651 1 8 1V3ZM13.2558 5.8749C13.5334 6.21135 13.7379 6.51494 13.8671 6.75228C13.9319 6.87109 13.9707 6.9604 13.9912 7.01907C14.0155 7.08838 14 7.07379 14 7H16C16 6.56472 15.8017 6.12268 15.6235 5.7956C15.4208 5.42353 15.1388 5.01456 14.7984 4.60196L13.2558 5.8749ZM8 11C7.54844 11 7.10263 10.9335 6.66672 10.8131L6.13408 12.7409C6.72569 12.9043 7.3509 13 8 13V11Z" fill="#ABB6CC"></path>
+                    <path d="M6.58579 8.41421C6.21071 8.03914 6 7.53043 6 7C6 6.46957 6.21071 5.96086 6.58579 5.58579C6.96086 5.21071 7.46957 5 8 5C8.53043 5 9.03914 5.21071 9.41421 5.58579" stroke="#ABB6CC" stroke-width="2"></path>
+                    <path d="M15 1L1 13" stroke="#ABB6CC" stroke-width="2" stroke-linecap="round"></path>
+                  </svg>
+                </div>
+              </button>
+            </div>
+          </div>
+          <button type="button" class="button button-primary enter-modal__button">Зарегистрироваться</button>
+          <div class="modal__policy policy-modal">
+            <p class="policy-modal__note">Нажимая кнопку «Зарегистрироваться», я соглашаюсь с <a href="#">Пользовательским соглашением</a> и <a href="#">Политикой обработки</a> персональных данных</p>
+            <div class="policy-modal__block">
+              <label class="policy-modal__check">
+                <input type="checkbox" checked name="policy-check" class="policy-modal__input"><span class="policy-modal__false-check">
+                  <svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 4L4.5 7.5L11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg></span>
+              </label>
+              <div class="policy-modal__confirm">Соглашаюсь получать <a href="#">уведомления</a> о скидках и акциях</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="regModalPhone" tabindex="-1" aria-modal="true" role="dialog" class="modal fade">
+      <div class="modal-dialog modal-dialog-centered enter-modal-dialog">
+        <div class="enter-modal reg-modal modal-content">
+          <button type="button" data-bs-dismiss="modal" aria-label="Close" class="modal__close enter-modal__close">
+            <svg aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15.332 4.66663L4.66536 15.3333" stroke="#ABB6CC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M4.66797 4.66663L15.3346 15.3333" stroke="#ABB6CC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </button>
+          <div class="modal__header enter-modal__header">
+            <button type="button" class="modal__back">
+              <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17 7H1M1 7L7 1M1 7L7 13" stroke="#ABB6CC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </button>
+            <p class="enter-modal__title">Регистрация</p>
+          </div>
+          <div class="modal__body">
+            <div class="enter-modal__group">
+              <div class="enter-modal__group-inner">
+                <input type="text" name="name" placeholder=" " class="enter-modal__input">
+                <button type="button" class="modal__clear">
+                  <svg aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.332 4.66663L4.66536 15.3333" stroke="#ABB6CC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M4.66797 4.66663L15.3346 15.3333" stroke="#ABB6CC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </button>
+                <label class="enter-modal__placeholder">Имя и фамилия</label>
+              </div>
+            </div>
+            <div class="enter-modal__group">
+              <div class="enter-modal__group-inner">
+                <input inputmode="tel" autocomplete="off" type="tel" name="phone" placeholder=" " readonly value="+7 (928) 452-95-29" class="enter-modal__input enter-modal__input--fill">
+                <button type="button" class="modal__edit">
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.41604 2.24719L8.97217 1.69107C9.89359 0.769644 11.3875 0.769644 12.3089 1.69107C13.2304 2.61249 13.2304 4.10641 12.3089 5.02783L11.7528 5.58396M8.41604 2.24719C8.41604 2.24719 8.48556 3.42897 9.5283 4.47171C10.571 5.51445 11.7528 5.58396 11.7528 5.58396M8.41604 2.24719L3.30329 7.35994C2.957 7.70624 2.78385 7.87939 2.63494 8.0703C2.45928 8.29551 2.30868 8.53919 2.18581 8.79701C2.08164 9.01558 2.00421 9.24789 1.84934 9.71249L1.19308 11.6812M11.7528 5.58396L6.64006 10.6967C6.29376 11.043 6.12061 11.2162 5.9297 11.3651C5.70449 11.5407 5.46082 11.6913 5.20299 11.8142C4.98442 11.9184 4.75211 11.9958 4.28751 12.1507L2.31875 12.8069M2.31875 12.8069L1.8375 12.9673C1.60887 13.0435 1.35679 12.984 1.18638 12.8136C1.01596 12.6432 0.956457 12.3911 1.03267 12.1625L1.19308 11.6812M2.31875 12.8069L1.19308 11.6812" stroke="#ABB6CC" stroke-width="2"></path>
+                  </svg>
+                </button>
+                <label class="enter-modal__placeholder">Телефон</label>
+              </div>
+            </div>
+            <div class="enter-modal__group">
+              <div class="enter-modal__group-inner">
+                <input autocomplete="off" type="text" name="mail" placeholder=" " class="enter-modal__input">
+                <button type="button" class="modal__clear">
+                  <svg aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.332 4.66663L4.66536 15.3333" stroke="#ABB6CC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M4.66797 4.66663L15.3346 15.3333" stroke="#ABB6CC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </button>
+                <label class="enter-modal__placeholder">Email</label>
+              </div>
+            </div>
+          </div>
+          <div class="enter-modal__group">
+            <div class="enter-modal__group-inner">
+              <input type="text" name="createpassword" placeholder=" " class="enter-modal__input">
+              <label class="enter-modal__placeholder">Придумайте пароль</label>
+              <button type="button" class="eye-ico unblind">
+                <div class="eye-ico__show">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 8C15 9 11.8656 13 8 13C4.13444 13 1 9 1 8C1 7 4.13444 3 8 3C11.8656 3 15 7 15 8Z" stroke="#ABB6CC" stroke-width="2"></path>
+                    <path d="M10 8C10 8.53043 9.78929 9.03914 9.41421 9.41421C9.03914 9.78929 8.53043 10 8 10C7.46957 10 6.96086 9.78929 6.58579 9.41421C6.21071 9.03914 6 8.53043 6 8C6 7.46957 6.21071 6.96086 6.58579 6.58579C6.96086 6.21071 7.46957 6 8 6C8.53043 6 9.03914 6.21071 9.41421 6.58579C9.78929 6.96086 10 7.46957 10 8Z" stroke="#ABB6CC" stroke-width="2"></path>
+                  </svg>
+                </div>
+                <div class="eye-ico__hide">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.7984 4.60196C14.4468 4.17598 13.8166 4.11561 13.3906 4.46713C12.9646 4.81864 12.9042 5.44892 13.2558 5.8749L14.7984 4.60196ZM6.66672 10.8131C6.13438 10.666 5.5836 10.9783 5.43652 11.5107C5.28943 12.043 5.60175 12.5938 6.13408 12.7409L6.66672 10.8131ZM14 7C14 6.90869 14.0224 6.9232 13.9475 7.088C13.8844 7.22662 13.7791 7.41348 13.6256 7.63686C13.3196 8.08235 12.8616 8.61576 12.2856 9.12728C11.1161 10.1659 9.59358 11 8 11V13C10.272 13 12.2495 11.8341 13.6136 10.6227C14.3044 10.0092 14.8716 9.35515 15.2741 8.76939C15.4749 8.47714 15.6446 8.18744 15.7681 7.9159C15.8796 7.67055 16 7.34131 16 7H14ZM2 7C2 7.09131 1.97759 7.0768 2.05253 6.912C2.11557 6.77338 2.22091 6.58652 2.37438 6.36314C2.68045 5.91765 3.13843 5.38424 3.71443 4.87272C4.88395 3.83412 6.40642 3 8 3V1C5.72803 1 3.7505 2.16588 2.3864 3.37728C1.69559 3.99076 1.12837 4.64485 0.725936 5.23061C0.525149 5.52286 0.355412 5.81256 0.231934 6.0841C0.120362 6.32945 0 6.65869 0 7H2ZM4.36521 9.65453C3.60404 9.09405 2.97875 8.44512 2.55129 7.88145C2.33731 7.5993 2.18427 7.35344 2.08965 7.16534C1.97701 6.94142 2 6.90359 2 7H0C0 7.39097 0.158981 7.77787 0.302959 8.06409C0.464956 8.38614 0.689161 8.73586 0.957703 9.08996C1.49528 9.79883 2.25613 10.5852 3.17933 11.265L4.36521 9.65453ZM8 3C9.26695 3 10.4918 3.52586 11.5415 4.27773L12.7061 2.65178C11.4425 1.74671 9.81651 1 8 1V3ZM13.2558 5.8749C13.5334 6.21135 13.7379 6.51494 13.8671 6.75228C13.9319 6.87109 13.9707 6.9604 13.9912 7.01907C14.0155 7.08838 14 7.07379 14 7H16C16 6.56472 15.8017 6.12268 15.6235 5.7956C15.4208 5.42353 15.1388 5.01456 14.7984 4.60196L13.2558 5.8749ZM8 11C7.54844 11 7.10263 10.9335 6.66672 10.8131L6.13408 12.7409C6.72569 12.9043 7.3509 13 8 13V11Z" fill="#ABB6CC"></path>
+                    <path d="M6.58579 8.41421C6.21071 8.03914 6 7.53043 6 7C6 6.46957 6.21071 5.96086 6.58579 5.58579C6.96086 5.21071 7.46957 5 8 5C8.53043 5 9.03914 5.21071 9.41421 5.58579" stroke="#ABB6CC" stroke-width="2"></path>
+                    <path d="M15 1L1 13" stroke="#ABB6CC" stroke-width="2" stroke-linecap="round"></path>
+                  </svg>
+                </div>
+              </button>
+            </div>
+          </div>
+          <button type="button" class="button button-primary enter-modal__button">Зарегистрироваться</button>
+          <div class="modal__policy policy-modal">
+            <p class="policy-modal__note">Нажимая кнопку «Зарегистрироваться», я соглашаюсь с <a href="#">Пользовательским соглашением</a> и <a href="#">Политикой обработки</a> персональных данных</p>
+            <div class="policy-modal__block">
+              <label class="policy-modal__check">
+                <input type="checkbox" checked name="policy-check" class="policy-modal__input"><span class="policy-modal__false-check">
+                  <svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 4L4.5 7.5L11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg></span>
+              </label>
+              <div class="policy-modal__confirm">Соглашаюсь получать <a href="#">уведомления</a> о скидках и акциях</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="enterRegModalEmail" tabindex="-1" aria-modal="true" role="dialog" class="modal fade">
+      <div class="modal-dialog modal-dialog-centered enter-modal-dialog">
+        <div class="enter-modal reg-modal modal-content">
+          <button type="button" data-bs-dismiss="modal" aria-label="Close" class="modal__close enter-modal__close">
+            <svg aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15.332 4.66663L4.66536 15.3333" stroke="#ABB6CC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M4.66797 4.66663L15.3346 15.3333" stroke="#ABB6CC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </button>
+          <div class="modal__header enter-modal__header">
+            <p class="enter-modal__title">Вход или регистрация</p>
+          </div>
+          <div class="modal__body">
+            <div class="enter-modal__group">
+              <div class="enter-modal__group-inner">
+                <input autofocus type="text" name="name" placeholder=" " value="ivanovalexey@gmail.com" class="enter-modal__input">
+                <label class="enter-modal__placeholder">Телефон или email</label>
+              </div>
+            </div>
+            <button type="button" class="button button-primary enter-modal__button">Продолжить</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="enterRegModalPhone" tabindex="-1" aria-modal="true" role="dialog" class="modal fade">
+      <div class="modal-dialog modal-dialog-centered enter-modal-dialog">
+        <div class="enter-modal reg-modal modal-content">
+          <button type="button" data-bs-dismiss="modal" aria-label="Close" class="modal__close enter-modal__close">
+            <svg aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15.332 4.66663L4.66536 15.3333" stroke="#ABB6CC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M4.66797 4.66663L15.3346 15.3333" stroke="#ABB6CC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </button>
+          <div class="modal__header enter-modal__header">
+            <p class="enter-modal__title">Вход или регистрация</p>
+          </div>
+          <div class="modal__body">
+            <div class="enter-modal__group">
+              <div class="enter-modal__group-inner">
+                <input type="text" name="name" placeholder=" " value="+7 (928) 452-95-29" class="enter-modal__input">
+                <label class="enter-modal__placeholder">Телефон или email</label>
+              </div>
+            </div>
+            <button type="button" class="button button-primary enter-modal__button">Продолжить</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="passRepairModalEmail" tabindex="-1" aria-modal="true" role="dialog" class="modal fade">
+      <div class="modal-dialog modal-dialog-centered enter-modal-dialog">
+        <div class="enter-modal reg-modal modal-content">
+          <button type="button" data-bs-dismiss="modal" aria-label="Close" class="modal__close enter-modal__close">
+            <svg aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15.332 4.66663L4.66536 15.3333" stroke="#ABB6CC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M4.66797 4.66663L15.3346 15.3333" stroke="#ABB6CC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </button>
+          <div class="modal__header enter-modal__header">
+            <button type="button" class="modal__back">
+              <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17 7H1M1 7L7 1M1 7L7 13" stroke="#ABB6CC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </button>
+            <p class="enter-modal__title">Регистрация</p>
+          </div>
+          <div class="modal__body">
+            <div class="enter-modal__group">
+              <div class="enter-modal__group-inner">
+                <input type="text" name="name" placeholder=" " value="Антон Иванов" class="enter-modal__input">
+                <button type="button" class="modal__clear">
+                  <svg aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.332 4.66663L4.66536 15.3333" stroke="#ABB6CC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M4.66797 4.66663L15.3346 15.3333" stroke="#ABB6CC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </button>
+                <label class="enter-modal__placeholder">Имя и фамилия</label>
+              </div>
+            </div>
+            <div class="enter-modal__group">
+              <div class="enter-modal__group-inner">
+                <input inputmode="tel" autocomplete="off" type="tel" name="phone" placeholder=" " readonly value="+7 (928) 452-95-29" class="enter-modal__input enter-modal__input--fill">
+                <button type="button" class="modal__edit">
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.41604 2.24719L8.97217 1.69107C9.89359 0.769644 11.3875 0.769644 12.3089 1.69107C13.2304 2.61249 13.2304 4.10641 12.3089 5.02783L11.7528 5.58396M8.41604 2.24719C8.41604 2.24719 8.48556 3.42897 9.5283 4.47171C10.571 5.51445 11.7528 5.58396 11.7528 5.58396M8.41604 2.24719L3.30329 7.35994C2.957 7.70624 2.78385 7.87939 2.63494 8.0703C2.45928 8.29551 2.30868 8.53919 2.18581 8.79701C2.08164 9.01558 2.00421 9.24789 1.84934 9.71249L1.19308 11.6812M11.7528 5.58396L6.64006 10.6967C6.29376 11.043 6.12061 11.2162 5.9297 11.3651C5.70449 11.5407 5.46082 11.6913 5.20299 11.8142C4.98442 11.9184 4.75211 11.9958 4.28751 12.1507L2.31875 12.8069M2.31875 12.8069L1.8375 12.9673C1.60887 13.0435 1.35679 12.984 1.18638 12.8136C1.01596 12.6432 0.956457 12.3911 1.03267 12.1625L1.19308 11.6812M2.31875 12.8069L1.19308 11.6812" stroke="#ABB6CC" stroke-width="2"></path>
+                  </svg>
+                </button>
+                <label class="enter-modal__placeholder">Телефон</label>
+              </div>
+            </div>
+            <div class="enter-modal__group">
+              <div class="enter-modal__group-inner">
+                <input autocomplete="off" type="text" name="mail" placeholder=" " value="Ivanovivan@gmail.com" class="enter-modal__input">
+                <button type="button" class="modal__clear">
+                  <svg aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.332 4.66663L4.66536 15.3333" stroke="#ABB6CC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M4.66797 4.66663L15.3346 15.3333" stroke="#ABB6CC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </button>
+                <label class="enter-modal__placeholder">Email</label>
+              </div>
+              <div class="enter-modal__repair repair-enter-modal">
+                <div class="repair-enter-modal__icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.91932 2.16254C9.39886 0.720846 10.6386 3.2687e-08 12 0C13.3614 -3.2687e-08 14.6011 0.720845 17.0807 2.16254L17.9193 2.65015C20.3989 4.09184 21.6386 4.81269 22.3193 6C23 7.18732 23 8.62901 23 11.5124V12.4876C23 15.371 23 16.8127 22.3193 18C21.6386 19.1873 20.3989 19.9082 17.9193 21.3499L17.0807 21.8375C14.6011 23.2792 13.3614 24 12 24C10.6386 24 9.39886 23.2792 6.91932 21.8375L6.08068 21.3499C3.60114 19.9082 2.36136 19.1873 1.68068 18C1 16.8127 1 15.371 1 12.4876V11.5124C1 8.62901 1 7.18732 1.68068 6C2.36136 4.81269 3.60114 4.09184 6.08068 2.65015L6.91932 2.16254Z" fill="white"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.91932 2.16254C9.39886 0.720846 10.6386 3.2687e-08 12 0C13.3614 -3.2687e-08 14.6011 0.720845 17.0807 2.16254L17.9193 2.65015C20.3989 4.09184 21.6386 4.81269 22.3193 6C23 7.18732 23 8.62901 23 11.5124V12.4876C23 15.371 23 16.8127 22.3193 18C21.6386 19.1873 20.3989 19.9082 17.9193 21.3499L17.0807 21.8375C14.6011 23.2792 13.3614 24 12 24C10.6386 24 9.39886 23.2792 6.91932 21.8375L6.08068 21.3499C3.60114 19.9082 2.36136 19.1873 1.68068 18C1 16.8127 1 15.371 1 12.4876V11.5124C1 8.62901 1 7.18732 1.68068 6C2.36136 4.81269 3.60114 4.09184 6.08068 2.65015L6.91932 2.16254ZM13.2222 16.8C13.2222 17.4627 12.675 18 12 18C11.325 18 10.7778 17.4627 10.7778 16.8C10.7778 16.1373 11.325 15.6 12 15.6C12.675 15.6 13.2222 16.1373 13.2222 16.8ZM12 5.1C12.5063 5.1 12.9167 5.50294 12.9167 6V13.2C12.9167 13.6971 12.5063 14.1 12 14.1C11.4937 14.1 11.0833 13.6971 11.0833 13.2V6C11.0833 5.50294 11.4937 5.1 12 5.1Z" fill="#EB1C4E"></path>
+                  </svg>
+                </div>
+                <div class="repair-enter-modal__text">Указанный email уже зарегистрирован. <br>Попробуйте <a href="#">восстановить пароль</a></div>
+              </div>
+            </div>
+            <div class="enter-modal__group">
+              <div class="enter-modal__group-inner">
+                <input type="text" name="createpassword" placeholder=" " value="В1623xHK_8jI092" class="enter-modal__input">
+                <label class="enter-modal__placeholder">Придумайте пароль</label>
+                <button type="button" class="eye-ico unblind">
+                  <div class="eye-ico__show">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M15 8C15 9 11.8656 13 8 13C4.13444 13 1 9 1 8C1 7 4.13444 3 8 3C11.8656 3 15 7 15 8Z" stroke="#ABB6CC" stroke-width="2"></path>
+                      <path d="M10 8C10 8.53043 9.78929 9.03914 9.41421 9.41421C9.03914 9.78929 8.53043 10 8 10C7.46957 10 6.96086 9.78929 6.58579 9.41421C6.21071 9.03914 6 8.53043 6 8C6 7.46957 6.21071 6.96086 6.58579 6.58579C6.96086 6.21071 7.46957 6 8 6C8.53043 6 9.03914 6.21071 9.41421 6.58579C9.78929 6.96086 10 7.46957 10 8Z" stroke="#ABB6CC" stroke-width="2"></path>
+                    </svg>
+                  </div>
+                  <div class="eye-ico__hide">
+                    <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14.7984 4.60196C14.4468 4.17598 13.8166 4.11561 13.3906 4.46713C12.9646 4.81864 12.9042 5.44892 13.2558 5.8749L14.7984 4.60196ZM6.66672 10.8131C6.13438 10.666 5.5836 10.9783 5.43652 11.5107C5.28943 12.043 5.60175 12.5938 6.13408 12.7409L6.66672 10.8131ZM14 7C14 6.90869 14.0224 6.9232 13.9475 7.088C13.8844 7.22662 13.7791 7.41348 13.6256 7.63686C13.3196 8.08235 12.8616 8.61576 12.2856 9.12728C11.1161 10.1659 9.59358 11 8 11V13C10.272 13 12.2495 11.8341 13.6136 10.6227C14.3044 10.0092 14.8716 9.35515 15.2741 8.76939C15.4749 8.47714 15.6446 8.18744 15.7681 7.9159C15.8796 7.67055 16 7.34131 16 7H14ZM2 7C2 7.09131 1.97759 7.0768 2.05253 6.912C2.11557 6.77338 2.22091 6.58652 2.37438 6.36314C2.68045 5.91765 3.13843 5.38424 3.71443 4.87272C4.88395 3.83412 6.40642 3 8 3V1C5.72803 1 3.7505 2.16588 2.3864 3.37728C1.69559 3.99076 1.12837 4.64485 0.725936 5.23061C0.525149 5.52286 0.355412 5.81256 0.231934 6.0841C0.120362 6.32945 0 6.65869 0 7H2ZM4.36521 9.65453C3.60404 9.09405 2.97875 8.44512 2.55129 7.88145C2.33731 7.5993 2.18427 7.35344 2.08965 7.16534C1.97701 6.94142 2 6.90359 2 7H0C0 7.39097 0.158981 7.77787 0.302959 8.06409C0.464956 8.38614 0.689161 8.73586 0.957703 9.08996C1.49528 9.79883 2.25613 10.5852 3.17933 11.265L4.36521 9.65453ZM8 3C9.26695 3 10.4918 3.52586 11.5415 4.27773L12.7061 2.65178C11.4425 1.74671 9.81651 1 8 1V3ZM13.2558 5.8749C13.5334 6.21135 13.7379 6.51494 13.8671 6.75228C13.9319 6.87109 13.9707 6.9604 13.9912 7.01907C14.0155 7.08838 14 7.07379 14 7H16C16 6.56472 15.8017 6.12268 15.6235 5.7956C15.4208 5.42353 15.1388 5.01456 14.7984 4.60196L13.2558 5.8749ZM8 11C7.54844 11 7.10263 10.9335 6.66672 10.8131L6.13408 12.7409C6.72569 12.9043 7.3509 13 8 13V11Z" fill="#ABB6CC"></path>
+                      <path d="M6.58579 8.41421C6.21071 8.03914 6 7.53043 6 7C6 6.46957 6.21071 5.96086 6.58579 5.58579C6.96086 5.21071 7.46957 5 8 5C8.53043 5 9.03914 5.21071 9.41421 5.58579" stroke="#ABB6CC" stroke-width="2"></path>
+                      <path d="M15 1L1 13" stroke="#ABB6CC" stroke-width="2" stroke-linecap="round"></path>
+                    </svg>
+                  </div>
+                </button>
+              </div>
+            </div>
+            <button type="button" class="button button-primary enter-modal__button">Зарегистрироваться</button>
+            <div class="modal__policy policy-modal">
+              <p class="policy-modal__note">Нажимая кнопку «Зарегистрироваться», я соглашаюсь с <a href="#">Пользовательским соглашением</a> и <a href="#">Политикой обработки</a> персональных данных</p>
+              <div class="policy-modal__block">
+                <label class="policy-modal__check">
+                  <input type="checkbox" checked name="policy-check" class="policy-modal__input"><span class="policy-modal__false-check">
+                    <svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 4L4.5 7.5L11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg></span>
+                </label>
+                <div class="policy-modal__confirm">Соглашаюсь получать <a href="#">уведомления</a> о скидках и акциях</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="passRepairModalPhone" tabindex="-1" aria-modal="true" role="dialog" class="modal fade">
+      <div class="modal-dialog modal-dialog-centered enter-modal-dialog">
+        <div class="enter-modal reg-modal modal-content">
+          <button type="button" data-bs-dismiss="modal" aria-label="Close" class="modal__close enter-modal__close">
+            <svg aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15.332 4.66663L4.66536 15.3333" stroke="#ABB6CC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M4.66797 4.66663L15.3346 15.3333" stroke="#ABB6CC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </button>
+          <div class="modal__header enter-modal__header">
+            <button type="button" class="modal__back">
+              <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17 7H1M1 7L7 1M1 7L7 13" stroke="#ABB6CC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </button>
+            <p class="enter-modal__title">Регистрация</p>
+          </div>
+          <div class="modal__body">
+            <div class="enter-modal__group">
+              <div class="enter-modal__group-inner">
+                <input type="text" name="name" placeholder=" " value="Антон Иванов" class="enter-modal__input">
+                <button type="button" class="modal__clear">
+                  <svg aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.332 4.66663L4.66536 15.3333" stroke="#ABB6CC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M4.66797 4.66663L15.3346 15.3333" stroke="#ABB6CC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </button>
+                <label class="enter-modal__placeholder">Имя и фамилия</label>
+              </div>
+            </div>
+            <div class="enter-modal__group">
+              <div class="enter-modal__group-inner">
+                <input inputmode="tel" autocomplete="off" type="tel" name="phone" placeholder=" " value="+7 (928) 452-95-29" class="enter-modal__input">
+                <button type="button" class="modal__clear">
+                  <svg aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.332 4.66663L4.66536 15.3333" stroke="#ABB6CC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M4.66797 4.66663L15.3346 15.3333" stroke="#ABB6CC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">						</path>
+                  </svg>
+                </button>
+                <label class="enter-modal__placeholder">Телефон</label>
+              </div>
+              <div class="enter-modal__repair repair-enter-modal">
+                <div class="repair-enter-modal__icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.91932 2.16254C9.39886 0.720846 10.6386 3.2687e-08 12 0C13.3614 -3.2687e-08 14.6011 0.720845 17.0807 2.16254L17.9193 2.65015C20.3989 4.09184 21.6386 4.81269 22.3193 6C23 7.18732 23 8.62901 23 11.5124V12.4876C23 15.371 23 16.8127 22.3193 18C21.6386 19.1873 20.3989 19.9082 17.9193 21.3499L17.0807 21.8375C14.6011 23.2792 13.3614 24 12 24C10.6386 24 9.39886 23.2792 6.91932 21.8375L6.08068 21.3499C3.60114 19.9082 2.36136 19.1873 1.68068 18C1 16.8127 1 15.371 1 12.4876V11.5124C1 8.62901 1 7.18732 1.68068 6C2.36136 4.81269 3.60114 4.09184 6.08068 2.65015L6.91932 2.16254Z" fill="white"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.91932 2.16254C9.39886 0.720846 10.6386 3.2687e-08 12 0C13.3614 -3.2687e-08 14.6011 0.720845 17.0807 2.16254L17.9193 2.65015C20.3989 4.09184 21.6386 4.81269 22.3193 6C23 7.18732 23 8.62901 23 11.5124V12.4876C23 15.371 23 16.8127 22.3193 18C21.6386 19.1873 20.3989 19.9082 17.9193 21.3499L17.0807 21.8375C14.6011 23.2792 13.3614 24 12 24C10.6386 24 9.39886 23.2792 6.91932 21.8375L6.08068 21.3499C3.60114 19.9082 2.36136 19.1873 1.68068 18C1 16.8127 1 15.371 1 12.4876V11.5124C1 8.62901 1 7.18732 1.68068 6C2.36136 4.81269 3.60114 4.09184 6.08068 2.65015L6.91932 2.16254ZM13.2222 16.8C13.2222 17.4627 12.675 18 12 18C11.325 18 10.7778 17.4627 10.7778 16.8C10.7778 16.1373 11.325 15.6 12 15.6C12.675 15.6 13.2222 16.1373 13.2222 16.8ZM12 5.1C12.5063 5.1 12.9167 5.50294 12.9167 6V13.2C12.9167 13.6971 12.5063 14.1 12 14.1C11.4937 14.1 11.0833 13.6971 11.0833 13.2V6C11.0833 5.50294 11.4937 5.1 12 5.1Z" fill="#EB1C4E"></path>
+                  </svg>
+                </div>
+                <div class="repair-enter-modal__text">Указанный номер уже зарегистрирован. <br>Попробуйте <a href="#">восстановить пароль</a></div>
+              </div>
+            </div>
+            <div class="enter-modal__group">
+              <div class="enter-modal__group-inner">
+                <input type="text" name="mail" placeholder=" " value="ivanovalexey@gmail.com" readonly class="enter-modal__input enter-modal__input--fill">
+                <button type="button" class="modal__edit">
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.41604 2.24719L8.97217 1.69107C9.89359 0.769644 11.3875 0.769644 12.3089 1.69107C13.2304 2.61249 13.2304 4.10641 12.3089 5.02783L11.7528 5.58396M8.41604 2.24719C8.41604 2.24719 8.48556 3.42897 9.5283 4.47171C10.571 5.51445 11.7528 5.58396 11.7528 5.58396M8.41604 2.24719L3.30329 7.35994C2.957 7.70624 2.78385 7.87939 2.63494 8.0703C2.45928 8.29551 2.30868 8.53919 2.18581 8.79701C2.08164 9.01558 2.00421 9.24789 1.84934 9.71249L1.19308 11.6812M11.7528 5.58396L6.64006 10.6967C6.29376 11.043 6.12061 11.2162 5.9297 11.3651C5.70449 11.5407 5.46082 11.6913 5.20299 11.8142C4.98442 11.9184 4.75211 11.9958 4.28751 12.1507L2.31875 12.8069M2.31875 12.8069L1.8375 12.9673C1.60887 13.0435 1.35679 12.984 1.18638 12.8136C1.01596 12.6432 0.956457 12.3911 1.03267 12.1625L1.19308 11.6812M2.31875 12.8069L1.19308 11.6812" stroke="#ABB6CC" stroke-width="2"></path>
+                  </svg>
+                </button>
+                <label class="enter-modal__placeholder">Email</label>
+              </div>
+            </div>
+          </div>
+          <div class="enter-modal__group">
+            <div class="enter-modal__group-inner">
+              <input type="text" name="createpassword" placeholder=" " value="В1623xHK_8jI092" class="enter-modal__input">
+              <label class="enter-modal__placeholder">Придумайте пароль</label>
+              <button type="button" class="eye-ico unblind">
+                <div class="eye-ico__show">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 8C15 9 11.8656 13 8 13C4.13444 13 1 9 1 8C1 7 4.13444 3 8 3C11.8656 3 15 7 15 8Z" stroke="#ABB6CC" stroke-width="2"></path>
+                    <path d="M10 8C10 8.53043 9.78929 9.03914 9.41421 9.41421C9.03914 9.78929 8.53043 10 8 10C7.46957 10 6.96086 9.78929 6.58579 9.41421C6.21071 9.03914 6 8.53043 6 8C6 7.46957 6.21071 6.96086 6.58579 6.58579C6.96086 6.21071 7.46957 6 8 6C8.53043 6 9.03914 6.21071 9.41421 6.58579C9.78929 6.96086 10 7.46957 10 8Z" stroke="#ABB6CC" stroke-width="2"></path>
+                  </svg>
+                </div>
+                <div class="eye-ico__hide">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.7984 4.60196C14.4468 4.17598 13.8166 4.11561 13.3906 4.46713C12.9646 4.81864 12.9042 5.44892 13.2558 5.8749L14.7984 4.60196ZM6.66672 10.8131C6.13438 10.666 5.5836 10.9783 5.43652 11.5107C5.28943 12.043 5.60175 12.5938 6.13408 12.7409L6.66672 10.8131ZM14 7C14 6.90869 14.0224 6.9232 13.9475 7.088C13.8844 7.22662 13.7791 7.41348 13.6256 7.63686C13.3196 8.08235 12.8616 8.61576 12.2856 9.12728C11.1161 10.1659 9.59358 11 8 11V13C10.272 13 12.2495 11.8341 13.6136 10.6227C14.3044 10.0092 14.8716 9.35515 15.2741 8.76939C15.4749 8.47714 15.6446 8.18744 15.7681 7.9159C15.8796 7.67055 16 7.34131 16 7H14ZM2 7C2 7.09131 1.97759 7.0768 2.05253 6.912C2.11557 6.77338 2.22091 6.58652 2.37438 6.36314C2.68045 5.91765 3.13843 5.38424 3.71443 4.87272C4.88395 3.83412 6.40642 3 8 3V1C5.72803 1 3.7505 2.16588 2.3864 3.37728C1.69559 3.99076 1.12837 4.64485 0.725936 5.23061C0.525149 5.52286 0.355412 5.81256 0.231934 6.0841C0.120362 6.32945 0 6.65869 0 7H2ZM4.36521 9.65453C3.60404 9.09405 2.97875 8.44512 2.55129 7.88145C2.33731 7.5993 2.18427 7.35344 2.08965 7.16534C1.97701 6.94142 2 6.90359 2 7H0C0 7.39097 0.158981 7.77787 0.302959 8.06409C0.464956 8.38614 0.689161 8.73586 0.957703 9.08996C1.49528 9.79883 2.25613 10.5852 3.17933 11.265L4.36521 9.65453ZM8 3C9.26695 3 10.4918 3.52586 11.5415 4.27773L12.7061 2.65178C11.4425 1.74671 9.81651 1 8 1V3ZM13.2558 5.8749C13.5334 6.21135 13.7379 6.51494 13.8671 6.75228C13.9319 6.87109 13.9707 6.9604 13.9912 7.01907C14.0155 7.08838 14 7.07379 14 7H16C16 6.56472 15.8017 6.12268 15.6235 5.7956C15.4208 5.42353 15.1388 5.01456 14.7984 4.60196L13.2558 5.8749ZM8 11C7.54844 11 7.10263 10.9335 6.66672 10.8131L6.13408 12.7409C6.72569 12.9043 7.3509 13 8 13V11Z" fill="#ABB6CC"></path>
+                    <path d="M6.58579 8.41421C6.21071 8.03914 6 7.53043 6 7C6 6.46957 6.21071 5.96086 6.58579 5.58579C6.96086 5.21071 7.46957 5 8 5C8.53043 5 9.03914 5.21071 9.41421 5.58579" stroke="#ABB6CC" stroke-width="2"></path>
+                    <path d="M15 1L1 13" stroke="#ABB6CC" stroke-width="2" stroke-linecap="round"></path>
+                  </svg>
+                </div>
+              </button>
+            </div>
+          </div>
+          <button type="button" class="button button-primary enter-modal__button">Зарегистрироваться</button>
+          <div class="modal__policy policy-modal">
+            <p class="policy-modal__note">Нажимая кнопку «Зарегистрироваться», я соглашаюсь с <a href="#">Пользовательским соглашением</a> и <a href="#">Политикой обработки</a> персональных данных</p>
+            <div class="policy-modal__block">
+              <label class="policy-modal__check">
+                <input type="checkbox" checked name="policy-check" class="policy-modal__input"><span class="policy-modal__false-check">
+                  <svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 4L4.5 7.5L11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg></span>
+              </label>
+              <div class="policy-modal__confirm">Соглашаюсь получать <a href="#">уведомления</a> о скидках и акциях</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="regErrorModal" tabindex="-1" aria-modal="true" role="dialog" class="modal fade">
+      <div class="modal-dialog modal-dialog-centered enter-modal-dialog">
+        <div class="enter-modal modal-content">
+          <button type="button" data-bs-dismiss="modal" aria-label="Close" class="modal__close enter-modal__close">
+            <svg aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15.332 4.66663L4.66536 15.3333" stroke="#ABB6CC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M4.66797 4.66663L15.3346 15.3333" stroke="#ABB6CC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </button>
+          <div class="modal__header enter-modal__header">
+            <button type="button" class="modal__back">
+              <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17 7H1M1 7L7 1M1 7L7 13" stroke="#ABB6CC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </button>
+            <p class="enter-modal__title">Регистрация</p>
+          </div>
+          <div class="modal__body">
+            <div class="enter-modal__group">
+              <div class="enter-modal__group-inner">
+                <input type="text" name="name" placeholder=" " class="enter-modal__input enter-modal__input--error">
+                <button type="button" class="modal__clear">
+                  <svg aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.332 4.66663L4.66536 15.3333" stroke="#ABB6CC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M4.66797 4.66663L15.3346 15.3333" stroke="#ABB6CC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </button>
+                <label class="enter-modal__placeholder">Имя и фамилия</label>
+              </div>
+              <div class="modal__error">Неверный логин или пароль</div>
+            </div>
+            <div class="enter-modal__group">
+              <div class="enter-modal__group-inner">
+                <input inputmode="tel" autocomplete="off" type="tel" name="phone" placeholder=" " readonly value="+7 (928) 452-95-29" class="enter-modal__input enter-modal__input--fill">
+                <button type="button" class="modal__edit">
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.41604 2.24719L8.97217 1.69107C9.89359 0.769644 11.3875 0.769644 12.3089 1.69107C13.2304 2.61249 13.2304 4.10641 12.3089 5.02783L11.7528 5.58396M8.41604 2.24719C8.41604 2.24719 8.48556 3.42897 9.5283 4.47171C10.571 5.51445 11.7528 5.58396 11.7528 5.58396M8.41604 2.24719L3.30329 7.35994C2.957 7.70624 2.78385 7.87939 2.63494 8.0703C2.45928 8.29551 2.30868 8.53919 2.18581 8.79701C2.08164 9.01558 2.00421 9.24789 1.84934 9.71249L1.19308 11.6812M11.7528 5.58396L6.64006 10.6967C6.29376 11.043 6.12061 11.2162 5.9297 11.3651C5.70449 11.5407 5.46082 11.6913 5.20299 11.8142C4.98442 11.9184 4.75211 11.9958 4.28751 12.1507L2.31875 12.8069M2.31875 12.8069L1.8375 12.9673C1.60887 13.0435 1.35679 12.984 1.18638 12.8136C1.01596 12.6432 0.956457 12.3911 1.03267 12.1625L1.19308 11.6812M2.31875 12.8069L1.19308 11.6812" stroke="#ABB6CC" stroke-width="2"></path>
+                  </svg>
+                </button>
+                <label class="enter-modal__placeholder">Телефон</label>
+              </div>
+            </div>
+            <div class="enter-modal__group">
+              <div class="enter-modal__group-inner">
+                <input autocomplete="off" type="text" name="mail" placeholder=" " class="enter-modal__input enter-modal__input--error">
+                <button type="button" class="modal__clear">
+                  <svg aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.332 4.66663L4.66536 15.3333" stroke="#ABB6CC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M4.66797 4.66663L15.3346 15.3333" stroke="#ABB6CC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </button>
+                <label class="enter-modal__placeholder">Email</label>
+              </div>
+              <div class="modal__error">Заполните почту</div>
+            </div>
+          </div>
+          <div class="enter-modal__group">
+            <div class="enter-modal__group-inner">
+              <input type="text" name="createpassword" placeholder=" " class="enter-modal__input enter-modal__input--error">
+              <label class="enter-modal__placeholder">Придумайте пароль</label>
+              <button type="button" class="eye-ico unblind">
+                <div class="eye-ico__show">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 8C15 9 11.8656 13 8 13C4.13444 13 1 9 1 8C1 7 4.13444 3 8 3C11.8656 3 15 7 15 8Z" stroke="#ABB6CC" stroke-width="2"></path>
+                    <path d="M10 8C10 8.53043 9.78929 9.03914 9.41421 9.41421C9.03914 9.78929 8.53043 10 8 10C7.46957 10 6.96086 9.78929 6.58579 9.41421C6.21071 9.03914 6 8.53043 6 8C6 7.46957 6.21071 6.96086 6.58579 6.58579C6.96086 6.21071 7.46957 6 8 6C8.53043 6 9.03914 6.21071 9.41421 6.58579C9.78929 6.96086 10 7.46957 10 8Z" stroke="#ABB6CC" stroke-width="2"></path>
+                  </svg>
+                </div>
+                <div class="eye-ico__hide">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.7984 4.60196C14.4468 4.17598 13.8166 4.11561 13.3906 4.46713C12.9646 4.81864 12.9042 5.44892 13.2558 5.8749L14.7984 4.60196ZM6.66672 10.8131C6.13438 10.666 5.5836 10.9783 5.43652 11.5107C5.28943 12.043 5.60175 12.5938 6.13408 12.7409L6.66672 10.8131ZM14 7C14 6.90869 14.0224 6.9232 13.9475 7.088C13.8844 7.22662 13.7791 7.41348 13.6256 7.63686C13.3196 8.08235 12.8616 8.61576 12.2856 9.12728C11.1161 10.1659 9.59358 11 8 11V13C10.272 13 12.2495 11.8341 13.6136 10.6227C14.3044 10.0092 14.8716 9.35515 15.2741 8.76939C15.4749 8.47714 15.6446 8.18744 15.7681 7.9159C15.8796 7.67055 16 7.34131 16 7H14ZM2 7C2 7.09131 1.97759 7.0768 2.05253 6.912C2.11557 6.77338 2.22091 6.58652 2.37438 6.36314C2.68045 5.91765 3.13843 5.38424 3.71443 4.87272C4.88395 3.83412 6.40642 3 8 3V1C5.72803 1 3.7505 2.16588 2.3864 3.37728C1.69559 3.99076 1.12837 4.64485 0.725936 5.23061C0.525149 5.52286 0.355412 5.81256 0.231934 6.0841C0.120362 6.32945 0 6.65869 0 7H2ZM4.36521 9.65453C3.60404 9.09405 2.97875 8.44512 2.55129 7.88145C2.33731 7.5993 2.18427 7.35344 2.08965 7.16534C1.97701 6.94142 2 6.90359 2 7H0C0 7.39097 0.158981 7.77787 0.302959 8.06409C0.464956 8.38614 0.689161 8.73586 0.957703 9.08996C1.49528 9.79883 2.25613 10.5852 3.17933 11.265L4.36521 9.65453ZM8 3C9.26695 3 10.4918 3.52586 11.5415 4.27773L12.7061 2.65178C11.4425 1.74671 9.81651 1 8 1V3ZM13.2558 5.8749C13.5334 6.21135 13.7379 6.51494 13.8671 6.75228C13.9319 6.87109 13.9707 6.9604 13.9912 7.01907C14.0155 7.08838 14 7.07379 14 7H16C16 6.56472 15.8017 6.12268 15.6235 5.7956C15.4208 5.42353 15.1388 5.01456 14.7984 4.60196L13.2558 5.8749ZM8 11C7.54844 11 7.10263 10.9335 6.66672 10.8131L6.13408 12.7409C6.72569 12.9043 7.3509 13 8 13V11Z" fill="#ABB6CC"></path>
+                    <path d="M6.58579 8.41421C6.21071 8.03914 6 7.53043 6 7C6 6.46957 6.21071 5.96086 6.58579 5.58579C6.96086 5.21071 7.46957 5 8 5C8.53043 5 9.03914 5.21071 9.41421 5.58579" stroke="#ABB6CC" stroke-width="2"></path>
+                    <path d="M15 1L1 13" stroke="#ABB6CC" stroke-width="2" stroke-linecap="round"></path>
+                  </svg>
+                </div>
+              </button>
+            </div>
+            <div class="modal__error">Заполните пароль</div>
+          </div>
+          <button type="button" class="button button-primary enter-modal__button">Зарегистрироваться</button>
+          <div class="modal__policy policy-modal">
+            <p class="policy-modal__note">Нажимая кнопку «Зарегистрироваться», я соглашаюсь с <a href="#">Пользовательским соглашением</a> и <a href="#">Политикой обработки</a> персональных данных</p>
+            <div class="policy-modal__block">
+              <label class="policy-modal__check">
+                <input type="checkbox" checked name="policy-check" class="policy-modal__input"><span class="policy-modal__false-check">
+                  <svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 4L4.5 7.5L11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg></span>
+              </label>
+              <div class="policy-modal__confirm">Соглашаюсь получать <a href="#">уведомления</a> о скидках и акциях</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="repairDefaultModal" tabindex="-1" aria-modal="true" role="dialog" class="modal fade">
+      <div class="modal-dialog modal-dialog-centered enter-modal-dialog">
+        <div class="enter-modal password-modal password-repair modal-content">
+          <button type="button" data-bs-dismiss="modal" aria-label="Close" class="modal__close enter-modal__close">
+            <svg aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15.332 4.66663L4.66536 15.3333" stroke="#ABB6CC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M4.66797 4.66663L15.3346 15.3333" stroke="#ABB6CC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </button>
+          <div class="modal__header enter-modal__header">
+            <p class="enter-modal__title">Восстановление пароля</p>
+          </div>
+          <div class="modal__body">
+            <div class="password-repair__note">
+              <div class="password-repair__row">На почту <span class="password-modal__value">i**********y@gmail.com</span> </div>
+              <div class="password-repair__row">будет отправлена ссылка для восстановления пароля</div>
+            </div>
+          </div>
+          <div class="password-modal__bottom password-modal__bottom--right">
+            <button type="button" class="button button-primary enter-modal__button enter-modal__send-link">Прислать ссылку</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="repairSuccessModal" tabindex="-1" aria-modal="true" role="dialog" class="modal fade">
+      <div class="modal-dialog modal-dialog-centered enter-modal-dialog">
+        <div class="enter-modal password-modal password-repair modal-content">
+          <button type="button" data-bs-dismiss="modal" aria-label="Close" class="modal__close enter-modal__close">
+            <svg aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15.332 4.66663L4.66536 15.3333" stroke="#ABB6CC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M4.66797 4.66663L15.3346 15.3333" stroke="#ABB6CC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </button>
+          <div class="modal__header enter-modal__header">
+            <p class="enter-modal__title">Проверьте почтовый ящик</p>
+          </div>
+          <div class="modal__body">
+            <div class="password-repair__note">
+              <div class="password-repair__row">Если письма нет во входящих, проверьте папку «Спам»</div>
+            </div>
+            <div class="password-repair__success success-password-repair">
+              <div class="success-password-repair__icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_286_1062)">
+                    <path d="M24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12Z" fill="#00C293"></path>
+                    <path d="M17.8601 8.57807L11.8285 16.0616C11.6069 16.3361 11.2349 16.5 10.8326 16.5C10.4767 16.5 10.1396 16.3715 9.90858 16.1472L6.19863 12.5565C5.9024 12.2696 5.94164 11.8483 6.28871 11.5972C6.62583 11.3525 7.19229 11.3478 7.53715 11.5874L10.6895 13.7767L16.3309 7.7869C16.6117 7.48899 17.1936 7.40855 17.5915 7.61454C18.0049 7.82861 18.1232 8.25207 17.8601 8.57807Z" fill="white"></path>
+                  </g>
+                  <defs>
+                    <clippath id="clip0_286_1062">
+                      <rect width="24" height="24" fill="white"></rect>
+                    </clippath>
+                  </defs>
+                </svg>
+              </div>
+              <div class="success-password-repair__text">Письмо со ссылкой для восстановления пароля отправлено на вашу почту</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     
     
     <script>if(!("IntersectionObserver"in window)){var script=document.createElement("script");script.src="https://raw.githubusercontent.com/w3c/IntersectionObserver/master/polyfill/intersection-observer.js",document.getElementsByTagName("head")[0].appendChild(script)}</script>
     <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-    <script src="js/enter.js"></script>
     
     
     <script src="js/common.min.js"></script>
