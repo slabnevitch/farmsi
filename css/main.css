@@ -134,14 +134,16 @@ textarea {
 /*=====================Enter=========================*/
 /*--------------------enter-modal----------------------*/
 .enter-modal-dialog {
-  max-width: 464px;
+  max-width: 343px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .enter-modal {
   border-radius: 24px;
   overflow: hidden;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1019607843);
-  padding: 24px;
+  padding: 20px 16px 16px 16px;
 }
 
 .enter-modal__close {
@@ -159,22 +161,25 @@ textarea {
   display: flex;
   -ms-flex-align: center;
   align-items: center;
-  row-gap: 4px;
-  margin-bottom: 32px;
+  column-gap: 8px;
+  margin-bottom: 8px;
+}
+.enter-modal__header--mb {
+  margin-bottom: 22px;
 }
 
 .enter-modal__title {
   display: inline;
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 600;
   line-height: 28px;
   text-align: left;
-  margin: 0 32px 0 0;
+  margin: 0 28px 0 0;
 }
 
 .modal__back {
-  width: 40px;
-  height: 40px;
+  width: 32px;
+  height: 32px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
@@ -183,14 +188,14 @@ textarea {
   justify-content: center;
 }
 .modal__back svg {
-  max-width: 16px;
+  max-width: 14px;
 }
 .modal__back:hover svg path {
   stroke: #78808F;
 }
 
 .enter-modal__group {
-  margin-bottom: 32px;
+  margin-bottom: 28px;
 }
 .enter-modal__group-inner {
   position: relative;
@@ -503,23 +508,27 @@ textarea {
 }
 
 .enter-modal__repair, .password-repair__success {
-  padding: 16px;
+  padding: 8px;
   margin-bottom: 20px;
   margin-top: 12px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
   align-items: center;
-  column-gap: 12px;
+  column-gap: 8px;
   background-color: #FEEDF1;
   border-radius: 10px;
 }
 
 .repair-enter-modal__icon, .success-password-repair__icon {
-  width: 24px;
-  height: 24px;
+  width: 18px;
+  height: 20px;
   -ms-flex-negative: 0;
   flex-shrink: 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
 }
 .repair-enter-modal__icon svg, .success-password-repair__icon svg {
   width: 100%;
@@ -537,8 +546,13 @@ textarea {
 
 /*===================== end Registration======================*/
 /*=====================Repair=========================*/
+.password-repair .enter-modal__repair, .password-repair .password-repair__success {
+  margin-bottom: 0;
+}
+
 .password-repair__note {
   margin-bottom: 32px;
+  font-size: 14px;
 }
 
 .password-repair__row:not(:last-child) {
