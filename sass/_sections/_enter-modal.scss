@@ -1,0 +1,462 @@
+/*=====================Enter=========================*/
+/*--------------------enter-modal----------------------*/
+
+.enter-modal-dialog{
+	max-width: 464px;
+}
+.enter-modal {
+    border-radius: 24px;
+	overflow: hidden;
+	box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, .1019607843);
+	padding: 24px;
+
+}
+.modal-content {}
+.enter-modal__close {
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding: 18px;
+
+	&:hover{
+		path{
+			stroke: $gray-hover;
+		}
+	}
+	
+}
+
+.enter-modal__header {
+	display: flex;
+    align-items: center;
+    row-gap: 4px;
+    margin-bottom: 32px;
+}
+.enter-modal__title{
+    display: inline;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28px;
+    text-align: left;
+    margin: 0 32px 0 0;
+}
+.modal__back{
+	width: 40px;
+	height: 40px;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg{
+    	max-width: 16px;
+    }
+
+    &:hover{
+    	svg{
+    		path{
+    			stroke: $gray-hover;
+    		}
+    	}
+    }
+    
+}
+.city-change__title {}
+.modal__body {}
+.enter-modal__group{
+	margin-bottom: 32px;
+
+	&-inner{
+		position: relative;
+
+	}
+}
+.enter-modal__input {
+	width: 100%;
+    border: 1px solid #E1E1E5;
+    padding: 14px 16px 14px 16px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+
+    &[readonly]{
+    	& ~ .enter-modal__placeholder{
+		  transform: translateY(-35px);   		
+    	}
+    }
+    &:not([readonly]){
+    	cursor: pointer;
+
+    	&.enter-modal__input--error{
+	    	border-color: #EB1C4E;
+	    }
+
+		&:hover{
+			border-color: #ABB6CC;
+		}
+	    &:focus ~ .enter-modal__placeholder,
+	    &:not(:placeholder-shown) ~ .enter-modal__placeholder{
+		  transform: translateY(-35px);
+		}
+		&:focus-visible,
+		&:active {
+		    outline: none;
+		    border-color: #000;
+		}
+		&:focus {
+		    // border-color: #000;
+			& ~ .modal__clear{
+				display: flex;
+			}
+		}
+		&:hover:not(:placeholder-shown){
+			& + .modal__clear{
+					// background-color: red;
+					svg{
+						path{
+							stroke: #78808F;
+						}
+
+					}
+				}
+		}
+		&:not(:placeholder-shown):not(:focus-visible){
+			border-color: #E1E1E5;
+
+			& ~ .modal__clear{
+				display: flex;
+			}
+
+			&.enter-modal__input--error{
+				border-color: #EB1C4E;
+			}
+
+
+		}
+    }
+
+    &--error{
+    	border-color: #EB1C4E;
+    }
+    &--fill{
+    	color: $gray-hover;
+    	background-color: $gray-fill;
+
+    	& + .modal-edit{
+    		display: flex;
+    	}
+    }
+
+		
+	
+}
+.button {
+	&:not([disabled]):hover {
+	    color: #fff;
+	    background-color: #00b88b;
+	}
+}
+.button-primary {}
+.enter-modal__button {
+	flex-direction: row-reverse;
+	column-gap: 10px;
+	width: 100%;
+	padding-block: 14px;
+	font-size: 16px;
+
+	&.button--loading{
+		color: white !important;
+	}
+	&.button--loading::after {
+	    position: relative;
+	    margin: 0;
+	}
+}
+.enter-modal__send-link{
+	width: auto;
+	display: inline-flex;
+}
+.eye-ico{
+	&.unblind{
+		.eye-ico__show{
+			display: block;
+
+		}
+		.eye-ico__hide{
+			display: none;
+
+		}
+	}
+
+	.eye-ico__show{
+		display: none;
+	}
+
+}
+.enter-modal__placeholder{
+	position: absolute;
+	padding:1px 5px;
+	left: 16px;
+    top: 50%;
+    border-radius: 8px;
+	font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    transform: translateY(-50%);
+    color: #78808F;
+    background-color: #fff;
+    transition: all .3s;
+    pointer-events: none;
+}
+.modal__clear,
+.modal__edit{
+	display: none;
+	align-items: center;
+	justify-content: center;
+	padding: 0;
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	right: 16px;
+	top: 50%;
+	transform: translateY(-50%);
+
+	svg{
+		width: 100%;
+
+	}
+
+	&:hover{
+    	svg{
+    		path{
+    			stroke: $gray-hover;
+    		}
+    	}
+    }
+}
+.modal__edit{
+	display: flex;
+}
+.modal__error{
+	margin-top: 6px;
+	padding-inline: 16px;
+	font-size: 14px;
+	line-height: 16px;
+	color: #EB1C4E;
+}
+/*--------------------END enter-modal----------------------*/ 
+
+/*--------------------password modal----------------------*/
+.password-modal{
+	display: block;
+	.enter-modal__header{
+		margin-bottom: 12px;
+	}
+}
+.password-modal__note{
+
+}
+.password-modal__message{
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 20px;
+	color: #78808F;
+}
+.password-modal__content{
+	margin-bottom: 32px;
+}
+.password-modal__value{
+	display: inline-block;
+	margin-right: 8px;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 24px;
+
+}
+.password-change{
+	padding: 0;
+	display: inline-block;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 20px;
+	color: #00C293;
+}
+.eye-ico{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0;
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	right: 16px;
+	top: 50%;
+	transform: translateY(-50%);
+
+	&__show{
+		&:hover{
+			svg{
+				path{
+					stroke: $gray-hover;
+				}
+			}
+		}
+	}
+
+	&__hide{
+		&:hover{
+	    	svg{
+	    		path{
+	    			&:first-child{
+	    				fill: $gray-hover;
+	    				
+	    			}
+	    			&:not(:first-child){
+	    				stroke: $gray-hover;
+	    				
+	    			}
+
+	    		}
+	    	}
+	    }
+	}
+}
+.password-modal__bottom{
+	margin-top: 14px;
+
+	&--right{
+		text-align: right;
+	}
+}
+.password-modal__forgot{
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 20px;
+	color: #00C293;
+}
+/*--------------------END password modal----------------------*/ 
+/*===================== Enter-======================*/ 
+
+/*=====================Registration=========================*/
+.reg-modal{
+	.enter-modal__group{
+		margin-bottom: 20px;
+	}
+
+}
+.modal__policy {
+	margin-top: 16px;
+	a{
+		color: #444952;
+	}
+}
+.policy-modal {}
+.policy-modal__note {
+	margin-bottom: 8px;
+	font-size: 12px;
+	line-height: 16px;
+	color: $gray-hover;
+}
+.policy-modal__block {
+	display: flex;
+	align-items: center;
+	column-gap: 8px;
+	font-size: 12px;
+	line-height: 16px;
+}
+.policy-modal__check {}
+.policy-modal__input {
+	@include checkbox();
+
+	&:checked + .policy-modal__false-check svg{
+		display: block;
+	}
+}
+.policy-modal__false-check {
+	width: 20px;
+	height: 20px;
+	flex-shrink: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 4px;
+	background-color: $accent;
+
+	@media (any-hover: hover) { //только для устройств с ховером
+			cursor: pointer;
+
+	}
+
+	svg{
+		max-width: 10px;
+		width: 100%;
+		display: none;
+	}
+}
+.policy-modal__confirm{
+	font-size: 12px;
+	line-height: 16px;
+	color: $gray-hover;
+}
+.enter-modal__repair{
+	padding: 16px;
+	margin-bottom: 20px;
+	margin-top: 12px;
+	display: flex;
+	align-items: center;
+	column-gap: 12px;
+	background-color: #FEEDF1;
+	border-radius: 10px;
+}
+.repair-enter-modal{
+
+}
+.repair-enter-modal__icon{
+	// margin-top: 2px;
+	width: 24px;
+	height: 24px;
+	flex-shrink: 0;
+
+	svg{
+		width: 100%;
+		max-height: 100%;
+	}
+}
+.repair-enter-modal__text{
+	font-size: 14px;
+	line-height: 18px;
+
+	a{
+		font-weight: 600;
+		color: $accent;
+	}
+}
+/*===================== end Registration======================*/ 
+
+/*=====================Repair=========================*/
+.password-repair__note{
+	margin-bottom: 32px;
+}
+.password-repair__row{
+
+	&:not(:last-child){
+		margin-bottom: 4px;
+	}
+
+}
+.password-repair__success{
+	@extend .enter-modal__repair;
+	margin-bottom: 0;
+	background-color: #DBF6F0;
+}
+.success-password-repair{
+
+}
+.success-password-repair__icon{
+	@extend .repair-enter-modal__icon;
+
+}
+.success-password-repair__text{
+	@extend .repair-enter-modal__text;
+}
+/*===================== end Repair======================*/ 

@@ -1,0 +1,45 @@
+#repairDefaultModal.modal.fade(tabindex='-1', aria-modal='true', role='dialog')
+	//- style="display:block"
+	.modal-dialog.modal-dialog-centered.enter-modal-dialog
+		.enter-modal.password-modal.password-repair.modal-content
+			button.modal__close.enter-modal__close(type='button', data-bs-dismiss='modal', aria-label='Close')
+				svg(aria-hidden='true', width='20', height='20', viewBox='0 0 20 20', fill='none', xmlns='http://www.w3.org/2000/svg')
+					path(d='M15.332 4.66663L4.66536 15.3333', stroke='#ABB6CC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
+					path(d='M4.66797 4.66663L15.3346 15.3333', stroke='#ABB6CC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
+			.modal__header.enter-modal__header
+				p.enter-modal__title Восстановление пароля
+
+			.modal__body
+				.password-repair__note
+					.password-repair__row На почту #[span.password-modal__value i**********y@gmail.com] 
+					.password-repair__row будет отправлена ссылка для восстановления пароля
+				
+
+			.password-modal__bottom.password-modal__bottom--right
+				button.button.button-primary.enter-modal__button.enter-modal__send-link(type='button') Прислать ссылку
+
+#repairSuccessModal.modal.fade(tabindex='-1', aria-modal='true', role='dialog')
+	//- style="display:block"
+	.modal-dialog.modal-dialog-centered.enter-modal-dialog
+		.enter-modal.password-modal.password-repair.modal-content
+			button.modal__close.enter-modal__close(type='button', data-bs-dismiss='modal', aria-label='Close')
+				svg(aria-hidden='true', width='20', height='20', viewBox='0 0 20 20', fill='none', xmlns='http://www.w3.org/2000/svg')
+					path(d='M15.332 4.66663L4.66536 15.3333', stroke='#ABB6CC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
+					path(d='M4.66797 4.66663L15.3346 15.3333', stroke='#ABB6CC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
+			.modal__header.enter-modal__header
+				p.city-change__title Проверьте почтовый ящик
+
+			.modal__body
+				.password-repair__note
+					.password-repair__row Если письма нет во входящих, проверьте папку «Спам»
+				.password-repair__success.success-password-repair
+					.success-password-repair__icon
+						svg(width='24', height='24', viewBox='0 0 24 24', fill='none', xmlns='http://www.w3.org/2000/svg')
+							g(clip-path='url(#clip0_286_1062)')
+								path(d='M24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12Z', fill='#00C293')
+								path(d='M17.8601 8.57807L11.8285 16.0616C11.6069 16.3361 11.2349 16.5 10.8326 16.5C10.4767 16.5 10.1396 16.3715 9.90858 16.1472L6.19863 12.5565C5.9024 12.2696 5.94164 11.8483 6.28871 11.5972C6.62583 11.3525 7.19229 11.3478 7.53715 11.5874L10.6895 13.7767L16.3309 7.7869C16.6117 7.48899 17.1936 7.40855 17.5915 7.61454C18.0049 7.82861 18.1232 8.25207 17.8601 8.57807Z', fill='white')
+							defs
+								clippath#clip0_286_1062
+									rect(width='24', height='24', fill='white')
+					
+					.success-password-repair__text Письмо со ссылкой для восстановления пароля отправлено на вашу почту
