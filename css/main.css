@@ -133,7 +133,7 @@ textarea {
 /*--------------------END adjustment----------------------*/
 /*=====================Enter=========================*/
 /*--------------------enter-modal----------------------*/
-.enter-modal__dialog {
+.enter-modal-dialog {
   max-width: 343px;
   margin-left: auto;
   margin-right: auto;
