@@ -158,18 +158,20 @@
 }
 .button-primary {}
 .enter-modal__button {
-	flex-direction: row-reverse;
-	column-gap: 10px;
-	width: 100%;
-	padding: 14px 28px;
-	font-size: 16px;
+	&.button{
+		flex-direction: row-reverse;
+		column-gap: 10px;
+		width: 100%;
+		padding: 14px 28px;
+		font-size: 16px;
 
-	&.button--loading{
-		color: white !important;
-	}
-	&.button--loading::after {
-	    position: relative;
-	    margin: 0;
+		&.button--loading{
+			color: white !important;
+		}
+		&.button--loading::after {
+		    position: relative;
+		    margin: 0;
+		}	
 	}
 }
 .enter-modal__send-link{
