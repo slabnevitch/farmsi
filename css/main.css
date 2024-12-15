@@ -127,10 +127,8 @@
   background-color: #00b88b;
 }
 
-.enter-modal__button {
-  width: 100%;
-}
 .enter-modal__button.button {
+  width: 100%;
   -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
   column-gap: 10px;
@@ -147,7 +145,7 @@
   height: 18px;
 }
 
-.enter-modal__send-link {
+.enter-modal__send-link.button {
   width: auto;
   display: -ms-inline-flexbox;
   display: inline-flex;

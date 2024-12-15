@@ -158,8 +158,8 @@
 }
 .button-primary {}
 .enter-modal__button {
-	width: 100%;
 	&.button{
+		width: 100%;
 		flex-direction: row-reverse;
 		column-gap: 10px;
 		padding: 14px 28px;
@@ -177,8 +177,11 @@
 	}
 }
 .enter-modal__send-link{
-	width: auto;
-	display: inline-flex;
+	&.button{
+		width: auto;
+		display: inline-flex;
+
+	}
 }
 .eye-ico{
 	&.unblind{
