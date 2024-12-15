@@ -20,6 +20,6 @@ $('input').each((i,item) => console.log($(item).is(":focus")));
 //   $(this).find('input').eq(0).blur();
 
 // });
-passwordErrorModal.show();
+passwordFullModal.show();
 document.getElementById('open').onclick = () => enterModal.show();
 document.getElementById('close').onclick = () => enterModal.hide();

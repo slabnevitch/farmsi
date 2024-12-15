@@ -265,11 +265,13 @@ textarea {
   background-color: #00b88b;
 }
 
+.enter-modal__button {
+  width: 100%;
+}
 .enter-modal__button.button {
   -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
   column-gap: 10px;
-  width: 100%;
   padding: 14px 28px;
   font-size: 16px;
 }
@@ -279,6 +281,8 @@ textarea {
 .enter-modal__button.button.button--loading::after {
   position: relative;
   margin: 0;
+  width: 18px;
+  height: 18px;
 }
 
 .enter-modal__send-link {
