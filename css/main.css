@@ -423,6 +423,7 @@
 }
 
 /*===================== end Repair======================*/
+/*=====================Change password page=========================*/
 .change-password {
   height: 100svh;
   display: -ms-flexbox;
@@ -433,6 +434,9 @@
   justify-content: center;
   background-color: #F7F7FA;
 }
+.change-password .enter-modal__group {
+  margin-bottom: 20px;
+}
 
 .change-password__form {
   padding: 24px;
@@ -440,6 +444,9 @@
   width: 100%;
   background-color: #fff;
   border-radius: 24px;
+}
+.change-password__form .enter-modal__button {
+  margin-top: 32px;
 }
 
 .form-change-password__logo {
@@ -655,4 +662,5 @@
 }
 
 /*--------------------END external----------------------*/
+/*===================== end Change password page======================*/
 /*# sourceMappingURL=maps/main.css.map */
