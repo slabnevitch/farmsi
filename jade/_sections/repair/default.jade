@@ -18,6 +18,26 @@
 			.password-modal__bottom.password-modal__bottom--right
 				button.button.button-primary.enter-modal__button.enter-modal__send-link(type='button') Прислать ссылку
 
+#repairEmailModal.modal.fade(tabindex='-1', aria-modal='true', role='dialog')
+	//- style="display:block"
+	.modal-dialog.modal-dialog-centered.enter-modal-dialog
+		.enter-modal.password-modal.password-repair.modal-content
+			button.modal__close.enter-modal__close(type='button', data-bs-dismiss='modal', aria-label='Close')
+				svg(aria-hidden='true', width='20', height='20', viewBox='0 0 20 20', fill='none', xmlns='http://www.w3.org/2000/svg')
+					path(d='M15.332 4.66663L4.66536 15.3333', stroke='#ABB6CC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
+					path(d='M4.66797 4.66663L15.3346 15.3333', stroke='#ABB6CC', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
+			.modal__header.enter-modal__header
+				p.enter-modal__title Восстановление пароля
+
+			.modal__body
+				.password-repair__note
+					.password-repair__row На почту #[span.password-modal__value ivanovalexey@gmail.com] 
+					.password-repair__row будет отправлена ссылка для восстановления пароля
+				
+
+			.password-modal__bottom.password-modal__bottom--right
+				button.button.button-primary.button--loading.enter-modal__button.enter-modal__send-link(type='button') Прислать ссылку
+
 #repairSuccessModal.modal.fade(tabindex='-1', aria-modal='true', role='dialog')
 	//- style="display:block"
 	.modal-dialog.modal-dialog-centered.enter-modal-dialog

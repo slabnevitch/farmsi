@@ -158,10 +158,10 @@
 }
 .button-primary {}
 .enter-modal__button {
+	width: 100%;
 	&.button{
 		flex-direction: row-reverse;
 		column-gap: 10px;
-		width: 100%;
 		padding: 14px 28px;
 		font-size: 16px;
 
@@ -171,6 +171,8 @@
 		&.button--loading::after {
 		    position: relative;
 		    margin: 0;
+		    width: 18px;
+		    height: 18px;
 		}	
 	}
 }

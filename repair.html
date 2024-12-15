@@ -47,6 +47,30 @@
         </div>
       </div>
     </div>
+    <div id="repairEmailModal" tabindex="-1" aria-modal="true" role="dialog" class="modal fade">
+      <div class="modal-dialog modal-dialog-centered enter-modal-dialog">
+        <div class="enter-modal password-modal password-repair modal-content">
+          <button type="button" data-bs-dismiss="modal" aria-label="Close" class="modal__close enter-modal__close">
+            <svg aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15.332 4.66663L4.66536 15.3333" stroke="#ABB6CC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M4.66797 4.66663L15.3346 15.3333" stroke="#ABB6CC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </button>
+          <div class="modal__header enter-modal__header">
+            <p class="enter-modal__title">Восстановление пароля</p>
+          </div>
+          <div class="modal__body">
+            <div class="password-repair__note">
+              <div class="password-repair__row">На почту <span class="password-modal__value">ivanovalexey@gmail.com</span> </div>
+              <div class="password-repair__row">будет отправлена ссылка для восстановления пароля</div>
+            </div>
+          </div>
+          <div class="password-modal__bottom password-modal__bottom--right">
+            <button type="button" class="button button-primary button--loading enter-modal__button enter-modal__send-link">Прислать ссылку</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <div id="repairSuccessModal" tabindex="-1" aria-modal="true" role="dialog" class="modal fade">
       <div class="modal-dialog modal-dialog-centered enter-modal-dialog">
         <div class="enter-modal password-modal password-repair modal-content">
