@@ -1,136 +1,3 @@
-/*--------------------adjustment----------------------*/
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-html, body {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-weight: normal;
-  min-width: 320px;
-  position: relative;
-  -webkit-font-smoothing: antialiased;
-  overflow-x: hidden;
-}
-.lock body {
-  overflow: hidden;
-  -ms-touch-action: none;
-  touch-action: none;
-  overflow-behavior: none;
-}
-
-a {
-  color: inherit;
-}
-
-img {
-  vertical-align: top;
-}
-
-ul, li {
-  margin: 0;
-  padding: 0;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-weight: inherit;
-  font-size: inherit;
-}
-
-input input[type=text],
-input[type=email],
-input[type=tel],
-textarea {
-  -webkit-appearance: none;
-  appearance: none;
-}
-
-.input,
-input {
-  border-radius: 0;
-  outline: none;
-  display: block;
-  width: 100%;
-  border: 0 none;
-}
-
-textarea {
-  resize: none;
-  padding: 0 0;
-}
-
-[class*=__wrapper] {
-  margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  max-width: 1200px;
-}
-
-.hidden {
-  display: none !important;
-}
-
-.ibg {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
-  padding-bottom: 52.25%;
-}
-
-.ibg img {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-}
-
-._prod-img {
-  position: relative;
-  padding-bottom: 80%;
-}
-._prod-img img {
-  display: block;
-  max-width: 100%;
-  max-height: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
-._fit {
-  padding-bottom: 80%;
-  position: relative;
-}
-
-._fit ._fit-img {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  right: 0;
-  object-fit: cover;
-  object-position: center center;
-}
-
-@supports ((-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px))) or (--webkit-backdrop-filter: blur(10px)) {
-  .bd-filter-fallback {
-    background-color: rgba(255, 255, 255, 0.72);
-    -webkit-backdrop-filter: blur(31px);
-    backdrop-filter: blur(31px);
-  }
-}
-
-/*--------------------END adjustment----------------------*/
 /*=====================Enter=========================*/
 /*--------------------enter-modal----------------------*/
 .enter-modal-dialog {
@@ -556,8 +423,236 @@ textarea {
 }
 
 /*===================== end Repair======================*/
-/*--------------------footer----------------------*/
-/*--------------------END footer----------------------*/
-/*--------------------header----------------------*/
-/*--------------------END header----------------------*/
+.change-password {
+  height: 100svh;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #F7F7FA;
+}
+
+.change-password__form {
+  padding: 24px;
+  max-width: 464px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 24px;
+}
+
+.form-change-password__logo {
+  max-width: 164px;
+  margin-bottom: 48px;
+}
+.form-change-password__logo img {
+  max-width: 100%;
+}
+
+.password-succes {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  column-gap: 15px;
+  margin-bottom: 12px;
+}
+
+.password-succes__icon {
+  width: 24px;
+  height: 24px;
+}
+.password-succes__icon svg {
+  width: 100%;
+  max-height: 100%;
+}
+
+.password-succes__title {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.form-change-password__message {
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.form-change-password__content {
+  margin-bottom: 128px;
+}
+
+/*--------------------external----------------------*/
+.enter-modal__header {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  column-gap: 4px;
+  margin-bottom: 32px;
+}
+
+.enter-modal__title {
+  display: inline;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28px;
+  text-align: left;
+  margin: 0 32px 0 0;
+}
+
+.enter-modal__group {
+  margin-bottom: 32px;
+}
+.enter-modal__group-inner {
+  position: relative;
+}
+
+.enter-modal__input {
+  width: 100%;
+  border: 1px solid #E1E1E5;
+  padding: 14px 16px 14px 16px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.enter-modal__input[readonly] ~ .enter-modal__placeholder {
+  -ms-transform: translateY(-35px);
+  transform: translateY(-35px);
+}
+.enter-modal__input:not([readonly]) {
+  cursor: pointer;
+}
+.enter-modal__input:not([readonly]).enter-modal__input--error {
+  border-color: #EB1C4E;
+}
+.enter-modal__input:not([readonly]):hover {
+  border-color: #ABB6CC;
+}
+.enter-modal__input:not([readonly]):focus ~ .enter-modal__placeholder, .enter-modal__input:not([readonly]):not(:placeholder-shown) ~ .enter-modal__placeholder {
+  -ms-transform: translateY(-35px);
+  transform: translateY(-35px);
+}
+.enter-modal__input:not([readonly]):focus-visible, .enter-modal__input:not([readonly]):active {
+  outline: none;
+  border-color: #000;
+}
+.enter-modal__input:not([readonly]):focus ~ .modal__clear {
+  display: -ms-flexbox;
+  display: flex;
+}
+.enter-modal__input:not([readonly]):hover:not(:placeholder-shown) + .modal__clear svg path {
+  stroke: #78808F;
+}
+.enter-modal__input:not([readonly]):not(:placeholder-shown):not(:focus-visible) {
+  border-color: #E1E1E5;
+}
+.enter-modal__input:not([readonly]):not(:placeholder-shown):not(:focus-visible) ~ .modal__clear {
+  display: -ms-flexbox;
+  display: flex;
+}
+.enter-modal__input:not([readonly]):not(:placeholder-shown):not(:focus-visible).enter-modal__input--error {
+  border-color: #EB1C4E;
+}
+.enter-modal__input--error {
+  border-color: #EB1C4E;
+}
+.enter-modal__input--fill {
+  color: #78808F;
+  background-color: #F7F7FA;
+}
+.enter-modal__input--fill + .modal-edit {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.button:not([disabled]):hover {
+  color: #fff;
+  background-color: #00b88b;
+}
+
+.enter-modal__button {
+  width: 100%;
+}
+.enter-modal__button.button {
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  column-gap: 10px;
+  padding: 14px 28px;
+  font-size: 16px;
+}
+.enter-modal__button.button.button--loading {
+  color: white !important;
+}
+.enter-modal__button.button.button--loading::after {
+  position: relative;
+  margin: 0;
+  width: 18px;
+  height: 18px;
+}
+
+.eye-ico.unblind .eye-ico__show {
+  display: block;
+}
+.eye-ico.unblind .eye-ico__hide {
+  display: none;
+}
+.eye-ico .eye-ico__show {
+  display: none;
+}
+
+.enter-modal__placeholder {
+  position: absolute;
+  padding: 1px 5px;
+  left: 16px;
+  top: 50%;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  color: #78808F;
+  background-color: #fff;
+  transition: all 0.3s;
+  pointer-events: none;
+}
+
+.modal__error {
+  margin-top: 6px;
+  padding-inline: 16px;
+  font-size: 14px;
+  line-height: 16px;
+  color: #EB1C4E;
+}
+
+.eye-ico {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.eye-ico__show:hover svg path {
+  stroke: #78808F;
+}
+.eye-ico__hide:hover svg path:first-child {
+  fill: #78808F;
+}
+.eye-ico__hide:hover svg path:not(:first-child) {
+  stroke: #78808F;
+}
+
+/*--------------------END external----------------------*/
 /*# sourceMappingURL=maps/main.css.map */
